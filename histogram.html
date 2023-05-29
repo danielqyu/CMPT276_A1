@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="histogram.css" rel="stylesheet"/>
+    <script src="calculate.js" defer></script>
+    <title>Histogram</title>
+</head>
+<body>
+    <div class="container">
+
+        <section class ="firstsection">
+            <h2>Lower bounds</h2>
+
+            <ul class="grades">
+                <li>
+                    <span>Max</span>
+                    <input type="text" class="textbox" id="max" placeholder="" value="100.00">
+                </li>
+                <li>
+                    <span>A+</span>
+                    <input type="text" class="textbox" id="Aplus" placeholder="" value="95.00">
+                </li>
+                <li>
+                    <span>A</span>
+                    <input type="text" class="textbox" id="A" placeholder="" value="90.00">
+                </li>
+                <li>
+                    <span>A-</span>
+                    <input type="text" class="textbox" id="Aminus" placeholder="" value="85.00">
+                </li>
+                <li>
+                    <span>B+</span>
+                    <input type="text" class="textbox" id="Bplus" placeholder="" value="80.00">
+                </li>
+                <li>
+                    <span>B</span>
+                    <input type="text" class="textbox" id="B" placeholder="" value="75.00">
+                </li>
+                <li>
+                    <span>B-</span>                
+                    <input type="text" class="textbox" id="Bminus" placeholder="" value="70.00">
+                </li>
+                <li>
+                    <span>C+</span>
+                    <input type="text" class="textbox" id="Cplus" placeholder="" value="65.00">
+                </li>
+                <li>
+                    <span>C</span>
+                    <input type="text" class="textbox" id="C" placeholder="" value="60.00">
+                </li>
+                <li>
+                    <span>C-</span>
+                    <input type="text" class="textbox" id="Cminus" placeholder="" value="55.00">
+                </li>
+                <li>
+                    <span>D</span>
+                    <input type="text" class="textbox" id="D" placeholder="" value="50.00">
+                </li>
+                <li>
+                    <span>F</span>
+                    <input type="text" class="textbox" id="F" placeholder="" value="0.00">
+                </li>
+            </ul>  
+
+        </section>
+        
+        <div class ="secondcol">
+
+            <section class="secondsection">
+                <h2>Histogram</h2>
+
+                <div class="secondsectionparent">
+                    <ul class="grades2">
+                        <li>A+</li>
+                        <li>A</li>
+                        <li>A-</li>
+                        <li>B+</li>
+                        <li>B</li>
+                        <li>B-</li>
+                        <li>C+</li>
+                        <li>C</li>
+                        <li>C-</li>
+                        <li>D</li>
+                        <li>F</li>
+                    </ul>
+
+                    <ul class="histogram">
+                        <li id="Aplusbox" class="histo"></li>
+                        <li id="Abox" class="histo"></li>
+                        <li id="Aminusbox" class="histo"></li>
+                        <li id="Bplusbox" class="histo"></li>
+                        <li id="Bbox" class="histo"></li>
+                        <li id="Bminusbox" class="histo"></li>
+                        <li id="Cplusbox" class="histo"></li>
+                        <li id="Cbox" class="histo"></li>
+                        <li id="Cminusbox" class="histo"></li>
+                        <li id="Dbox" class="histo"></li>
+                        <li id="Fbox" class="histo"></li>
+                    </ul>
+                </div>
+
+            </section>
+
+            <section class="thirdsection">
+                <p>New Grade:<input type="text" id="inputbox"></p>
+                <button id="inputbutton" onclick="processInput()">Add Grade</button>
+                <h3 id ="errorReturn"></h3>
+            </section>
+            
+        </div>
+    </div>
+</body>
+</html>

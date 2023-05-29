@@ -1,0 +1,158 @@
+* {
+    font-family: 'Times New Roman', Times, serif;
+}
+h2 {
+    color: #b5151c;
+    margin: 0;
+}
+
+button {
+    margin-left: 90px;
+    
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+input:focus {
+    outline: none;
+}
+
+.container {
+    display: flex;
+}
+
+/* FIRST SECTION: GRADE RANGES */
+
+.firstsection {
+    background-color: #e9eff1;
+    padding-left: 15px;
+    padding-top: 15px;
+    width: 400px;
+    height: 700px;
+}
+
+.firstsection .grades {
+    padding-left: 35px;
+    padding-top: 30px;
+}
+
+.firstsection li {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+}
+
+.firstsection li span {
+    flex-grow: 1;
+    padding-right: 5px;
+    max-width: 80px;
+}
+
+.firstsection .textbox {
+    width: 70px;
+    height: 25px;
+    padding-right: 10px;
+    padding-top: 2.5px;
+    padding-bottom: 2.5px;
+    margin-left: 50px;
+    text-align: right;
+    border: 1px solid black;
+    border-radius: 2px;
+    background-color: white;
+    border-color: lightgray;
+}
+
+/* SECOND SECTION: HISTOGRAM */
+
+.secondcol {
+    display: flex;
+    flex-direction: column;
+}
+
+.secondsection {
+    background-color: #e9eff1;
+    margin-left: 20px;
+    width: 430px;
+    height: 465px;
+    padding-left: 15px;
+    padding-top: 15px;
+}   
+
+.secondsectionparent {
+    display: flex;
+    flex-direction: row;
+    padding-top: 30px;
+    
+}
+
+.secondsection li {
+    margin-bottom: 15px;
+    margin-left: 25px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.histogram {
+    padding-left: 150px;
+    font-weight: 500;
+}
+
+.histogram ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100px;
+}
+
+.grades2 {
+    padding-left: 10px;
+}
+
+.grades2, 
+.histogram {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+/* THIRD SECTION: GRADE INPUT */
+
+
+.thirdsection {
+    background-color: #e9eff1;
+    height: 214px;
+    width: 425px;
+    margin-left: 20px;
+    margin-top: 20px;
+    padding-left: 20px;
+    padding-top: 1px;
+}
+
+#inputbox {
+    width: 150px;
+    margin-left: 10px;
+    background-color: white;
+    height: 25px;
+    padding-right: 10px;
+    padding-top: 2.5px;
+    padding-bottom: 2.5px;
+    border-color: lightgray;
+    text-align: right;
+    border: 1px solid black;
+    border-radius: 2px;
+    background-color: white;
+    border-color: lightgray;
+}
+
+#inputbutton {
+    position: absolute;
+}
+
+
+
+
